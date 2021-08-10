@@ -1,0 +1,65 @@
+/*
+  Name: Said Sheck
+  Date: 06/11/2021
+  Section/ TA: CSE 154 AA Tal Wolman
+  The following CSS page laysout style for our
+  stop-watch page. Where users it will deisgnitate the fonts,
+  the spacing between, etc
+*/
+body {
+  padding-top: 15%;
+  font-family: 'Courier New', "Courier", monospace;
+}
+
+body, main {
+  flex-direction: column;
+}
+
+body, main, #button-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h1, h2, main > p {
+  text-align: center;
+}
+
+h1, main > p {
+  margin-bottom: 40px;
+}
+
+main > p {
+  font-size: 100px;
+  margin-top: 40px;
+}
+
+button {
+  font-size: 25px;
+  border-radius: 25px;
+  height: 100px;
+  width: 100px;
+  transition-property: all;
+  transition-duration: 350ms;
+}
+
+#button-container {
+  list-style: none;
+}
+
+button:hover {
+  color: #FFF;
+  border: none;
+}
+
+#start:hover {
+  background: #73AD21;
+}
+
+#stop:hover {
+  background: #FF6B6B;
+}
+
+#reset:hover {
+  background: #5688C7;
+}
+
